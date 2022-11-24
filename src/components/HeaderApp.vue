@@ -1,6 +1,6 @@
 <script>
   export default {
-    name: 'App'
+    name: 'HeaderApp'
   }
 </script>
 
@@ -9,6 +9,6 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>
