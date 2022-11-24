@@ -5,7 +5,9 @@
 </script>
 
 <template>
-
+    <main>
+        M
+    </main>
 </template>
 
 

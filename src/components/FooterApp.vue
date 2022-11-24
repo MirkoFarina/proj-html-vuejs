@@ -5,7 +5,9 @@
 </script>
 
 <template>
-
+<footer>
+    f
+</footer>
 </template>
 
 
