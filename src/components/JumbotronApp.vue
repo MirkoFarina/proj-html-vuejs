@@ -8,7 +8,7 @@
     <div class="jumbotron">
         <div class="content-jumbotron container">
            <div class="row">
-                <div class="col-5 text">
+                <div class="col-12 col-lg-5 text">
                     <h2>
                         Complete Your Dreams in JavaS Programming
                     </h2>
@@ -20,10 +20,37 @@
                         Download free E-book
                     </button>
                 </div>
-                <div class="col-7 img">
+                <div class="col-12 col-lg-7 img">
                     <img src="../assets/img/home-5-hero-image.png" alt="Img HomeStudy">
                 </div>
            </div>
+        </div>
+
+        <div class="action-right">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-life-ring"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-book"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </template>
@@ -35,10 +62,22 @@
 
 .jumbotron {
     background-color: $background-color;
-    height: 700px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        z-index: 0;
+        background-image: url('../assets/img/jumbo-overlay.svg');
+        background-size: 100% 420px;
+        background-repeat: no-repeat;
+        transform: scaleY(-1);
+    }
 }
 .content-jumbotron {
-    height: 100%;
     align-items: flex-start;
     padding: 50px 0;
     h2 {
@@ -66,5 +105,30 @@
     .img {
         text-align: end;
     }
+    .col-12 {
+        z-index: 1;
+    }
+}
+
+.action-right {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -4px 3px 10px -5px gray;
+    ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    a {
+        display: inline-block;
+        color: black;
+        margin-bottom: 10px;
+    }
+}
 }
 </style>

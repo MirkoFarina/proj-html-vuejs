@@ -62,6 +62,7 @@ export default {
         }
         span i {
             color: $secondary-color;
+            cursor: pointer;
         }
     }
 </style>
