@@ -31,7 +31,7 @@ import InteractionHeader from './InteractionHeader.vue';
     @use '../scss/partials/mixins' as *;
     @use '../scss/partials/variables' as *;
     header {
-        background-color: #E9E6E3;
+        background-color: $background-color;
         height: 100px;
         .content-header  {
             height: 100%;

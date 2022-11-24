@@ -48,14 +48,14 @@ export default {
     }
     .search {
         background-color: white;
-        border-radius: 10px;
-        padding: 15px 20px;
+        border-radius: 5px;
+        padding: 10px 25px;
         margin-left: 20px;
-        width: 250px;
+        width: 180px;
         input {
             background-color: white;
             border: none;
-            width: 90%;
+            width: 80%;
             &:focus {
                 outline: none;
             }
