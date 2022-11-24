@@ -36,7 +36,6 @@ import dataHeader from '../data/navHeaderData';
         }
        a {
         color: $primary-color;
-        font-weight: 600;
        }
        i {
         font-size: .7rem;

@@ -88,7 +88,6 @@
     }
     p {
         font-weight: 600;
-        font-size: 1.2rem;
         color: lighten($primary-color, 35%);
         margin-bottom: 50px;
     }

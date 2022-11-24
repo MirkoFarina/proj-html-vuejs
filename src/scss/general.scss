@@ -5,6 +5,29 @@
 //FONT AWESOME
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
+// MONTSERRAT 400
+@import "node_modules/@fontsource/montserrat/index.css";
+
+// MONTSERRAT 700
+@import "node_modules/@fontsource/montserrat/700.css";
+
+// LATO 400
+@import "node_modules/@fontsource/lato/index.css";
+
+// LATO 700
+@import "node_modules/@fontsource/lato/700.css";
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
 
 a {
     text-decoration: none;
