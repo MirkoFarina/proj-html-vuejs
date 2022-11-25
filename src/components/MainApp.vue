@@ -1,13 +1,19 @@
 <script>
 import {dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents} from '../data/allDataSection';
-
+//JUMBO
 import JumbotronApp from './JumbotronApp.vue';
+// BUILD DREAM 
 import TemplateBuildDream from './TemplateBuildDream.vue';
+// CARRER PERSPECTIVE
 import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
+// STATICS
 import StaticsApp from './StaticsApp.vue';
+// COURSES
 import TemplateCourses from './TemplateCourses.vue';
+// QUESTION
 import QuestionLeft from './QuestionLeft.vue';
 import QuestionRight from './QuestionRight.vue';
+//EVENTS
 import TemplateEvent from './TemplateEvent.vue';
 
   export default {
