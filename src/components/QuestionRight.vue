@@ -89,13 +89,17 @@ export default {
         .img-abs-right {
             position: absolute;
             top: 0;
-            right: 90px;
-            width: 80px;
-            height: 100px;
-            background-image: url('../assets/img/maxcoach-shape-02.png');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
+            right: 50px;
+            z-index: -1;
+            &::after  {
+                content: '';
+                display: block;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: 10px solid #ecc5ab;
+                
+            }
         }
     }
 </style>

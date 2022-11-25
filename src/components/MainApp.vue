@@ -56,6 +56,8 @@ import QuestionRight from './QuestionRight.vue'
             <QuestionLeft/>
             <QuestionRight />
         </section>
+
+        
     </main>
 </template>
 
