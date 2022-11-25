@@ -1,10 +1,8 @@
 <script>
-import accordion from '../data/dataAccordion';
 export default {
-    data (){
-        return {
-            accordion
-        }
+    name: 'accordion',
+    props: {
+        accordion: Array
     }
 };
 </script>

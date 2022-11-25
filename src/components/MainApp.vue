@@ -2,17 +2,21 @@
 import dataCardDream from '../data/dataCardDream';
 import JumbotronApp from './JumbotronApp.vue';
 import TemplateBuildDream from './TemplateBuildDream.vue';
+import accordion from '../data/dataAccordion';
 import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
+import StaticsApp from './StaticsApp.vue';
   export default {
     name: 'MainApp',
     components: {
       JumbotronApp,
       TemplateBuildDream,
-      TemplateCareerPerspective
+      TemplateCareerPerspective,
+      StaticsApp
     },
     data(){
         return {
-            dataCardDream
+            dataCardDream,
+            accordion
         }
     }
   }
@@ -27,7 +31,11 @@ import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
         </section>
 
         <section id="career-perspective">
-            <TemplateCareerPerspective />
+            <TemplateCareerPerspective :dataAccordion="accordion"/>
+        </section>
+
+        <section id="statistics">
+            <StaticsApp />
         </section>
     </main>
 </template>

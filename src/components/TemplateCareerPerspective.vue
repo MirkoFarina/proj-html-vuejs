@@ -2,6 +2,9 @@
 import AccordionApp from './AccordionApp.vue';
 export default {
     name: 'TemplateCareerPerspective',
+    props: {
+        dataAccordion: Array
+    },
     components: {
         AccordionApp
     }
@@ -23,7 +26,7 @@ export default {
                         Construct a  <span>stunning</span> carrer perspective
                     </h2>
                 </div>
-                <AccordionApp />
+                <AccordionApp :accordion="dataAccordion"/>
             </div>
         </div>
     </div>
@@ -40,7 +43,7 @@ export default {
             top: 50px;
             left: -50px;
             background-image: url('../assets/img/underlay-shape-lilla.svg');
-            background-size: 60% 70%;
+            background-size: 60% 400px;
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
