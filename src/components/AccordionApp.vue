@@ -1,24 +1,9 @@
 <script>
+import accordion from '../data/dataAccordion';
 export default {
     data (){
         return {
-            accordion: [
-                {
-                    title: 'Multiple Platforms supported for teaching & studying',
-                    body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor minus velit aperiam placeat dicta quis aliquam provident deserunt voluptatibus cum, odit exercitationem, eos voluptas laudantium incidunt! Ratione, molestias corrupti nostrum minus quisquam autem quo doloremque laborum dolorem ea doloribus enim voluptates. Sint aliquid ullam dicta, ipsum ipsam officiis. Commodi, tempore.',
-                    isShow: false
-                },
-                {
-                    title: 'Multiple course participation at the same time',
-                    body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor minus velit aperiam placeat dicta quis aliquam provident deserunt voluptatibus cum, odit exercitationem, eos voluptas laudantium incidunt! Ratione, molestias corrupti nostrum minus quisquam autem quo doloremque laborum dolorem ea doloribus enim voluptates. Sint aliquid ullam dicta, ipsum ipsam officiis. Commodi, tempore.',
-                    isShow: false
-                },
-                {
-                    title: 'track study progress & deliver prompt feedback',
-                    body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor minus velit aperiam placeat dicta quis aliquam provident deserunt voluptatibus cum, odit exercitationem, eos voluptas laudantium incidunt! Ratione, molestias corrupti nostrum minus quisquam autem quo doloremque laborum dolorem ea doloribus enim voluptates. Sint aliquid ullam dicta, ipsum ipsam officiis. Commodi, tempore.',
-                    isShow: false
-                }
-            ]
+            accordion
         }
     }
 };
@@ -70,7 +55,7 @@ h2 {
         color: lighten($black-color, 10%);
         .header-accordion {
             position: relative;
-            padding: 25px 40px 25px 25px;
+            padding: 15px 40px 15px 15px;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             text-transform: capitalize;

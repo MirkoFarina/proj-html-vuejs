@@ -22,11 +22,11 @@ import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
     <main>
         <jumbotron-app class="mb-5" />
         
-        <section id="build-dream" class="mb-5">
+        <section id="build-dream">
             <TemplateBuildDream :data="dataCardDream" />
         </section>
 
-        <section id="career-perspective" class="mb-5">
+        <section id="career-perspective">
             <TemplateCareerPerspective />
         </section>
     </main>
@@ -35,4 +35,7 @@ import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
 
 <style lang="scss" scoped>
 @use '../scss/partials/variables' as *;
+section {
+  margin-bottom: 100px;
+}
 </style>
