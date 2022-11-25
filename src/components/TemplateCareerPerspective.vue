@@ -1,6 +1,10 @@
 <script>
+import AccordionApp from './AccordionApp.vue';
 export default {
-    name: 'TemplateCareerPerspective.vue'
+    name: 'TemplateCareerPerspective',
+    components: {
+        AccordionApp
+    }
 }
 </script>
 
@@ -19,6 +23,7 @@ export default {
                         Construct a  <span>stunning</span> carrer perspective
                     </h2>
                 </div>
+                <AccordionApp />
             </div>
         </div>
     </div>

@@ -21,10 +21,12 @@ import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
 <template>
     <main>
         <jumbotron-app class="mb-5" />
+        
         <section id="build-dream" class="mb-5">
             <TemplateBuildDream :data="dataCardDream" />
         </section>
-        <section id="career-perspective">
+
+        <section id="career-perspective" class="mb-5">
             <TemplateCareerPerspective />
         </section>
     </main>
