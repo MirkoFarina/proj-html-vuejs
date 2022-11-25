@@ -11,8 +11,8 @@ export default {
 <template>
     <div class="container">
         <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col text-center">
-                <img src="../assets/img/about-us-03-image-01.png" alt="Construc stunning">
+            <div class="col text-center left">
+                <img class="over" src="../assets/img/about-us-03-image-01.png" alt="Construc stunning">
             </div>
             <div class="col">
                 <div class="title mb-5">
@@ -31,5 +31,19 @@ export default {
 
 
 <style lang="scss" scoped>
-
+    .left {
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            background-image: url('../assets/img/underlay-shape-lilla.svg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
 </style>
