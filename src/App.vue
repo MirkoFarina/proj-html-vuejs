@@ -41,4 +41,11 @@
         }
         }
     }
+
+   .mf-button {
+        background-color: $secondary-color;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+    }
 </style>

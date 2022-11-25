@@ -26,7 +26,7 @@ export default {
         </div>
         <div class="row">
             <div class="col-4 offset-4">
-                <button type="button" class="btn  btn-lg">
+                <button type="button" class="btn mf-button  btn-lg">
                     View all courses 
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
@@ -39,10 +39,6 @@ export default {
 @use '../scss/partials/variables' as *;
 
     button {
-        background-color: $secondary-color;
-        color: white;
         padding: 13px 50px;
-        font-size: 1rem;
-        font-weight: 700;
     }
 </style>

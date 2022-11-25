@@ -15,7 +15,7 @@
                     <p>
                         Learn any coding program in distance and for a reasonable free. You don't have to struggle alone, you've got our assistance and help.
                     </p>
-                    <button type="button" class="btn  btn-lg">
+                    <button type="button" class="btn mf-button btn-lg">
                         <i class="fa-solid fa-download"></i>
                         Download free E-book
                     </button>
@@ -92,11 +92,7 @@
         margin-bottom: 50px;
     }
     button {
-        background-color: $secondary-color;
-        color: white;
         padding: 13px 30px;
-        font-size: 1rem;
-        font-weight: 700;
     }
     .text {
         align-self: center;
