@@ -4,6 +4,7 @@ import JumbotronApp from './JumbotronApp.vue';
 import TemplateBuildDream from './TemplateBuildDream.vue';
 import accordion from '../data/dataAccordion';
 import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
+import dataStatics from '../data/dataStatics';
 import StaticsApp from './StaticsApp.vue';
   export default {
     name: 'MainApp',
@@ -16,7 +17,8 @@ import StaticsApp from './StaticsApp.vue';
     data(){
         return {
             dataCardDream,
-            accordion
+            accordion,
+            dataStatics
         }
     }
   }
@@ -35,7 +37,7 @@ import StaticsApp from './StaticsApp.vue';
         </section>
 
         <section id="statistics">
-            <StaticsApp />
+            <StaticsApp :statics="dataStatics" />
         </section>
     </main>
 </template>
