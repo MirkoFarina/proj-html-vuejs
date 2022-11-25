@@ -28,10 +28,11 @@ export default {
 @use '../scss/partials/variables' as *;
 @use '../scss/partials/mixins' as *;
 .statics {
-    background-color: $background-color;
+    background-color:lighten($background-color, 5%);
     padding: 70px 0 ;
     .all-statics {
         display: flex;
+        flex-wrap: wrap;
         @include justifyContents($type: 'around')
     }
     h4 {

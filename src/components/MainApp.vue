@@ -6,19 +6,23 @@ import accordion from '../data/dataAccordion';
 import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
 import dataStatics from '../data/dataStatics';
 import StaticsApp from './StaticsApp.vue';
+import dataCardCourses from '../data/dataCardCourses';
+import TemplateCourses from './TemplateCourses.vue';
   export default {
     name: 'MainApp',
     components: {
       JumbotronApp,
       TemplateBuildDream,
       TemplateCareerPerspective,
-      StaticsApp
+      StaticsApp,
+      TemplateCourses
     },
     data(){
         return {
             dataCardDream,
             accordion,
-            dataStatics
+            dataStatics,
+            dataCardCourses
         }
     }
   }
@@ -38,6 +42,14 @@ import StaticsApp from './StaticsApp.vue';
 
         <section id="statistics">
             <StaticsApp :statics="dataStatics" />
+        </section>
+
+        <section id="courses">
+            <TemplateCourses :dataCourses="dataCardCourses"/>
+        </section>
+
+        <section id="questions">
+          
         </section>
     </main>
 </template>
