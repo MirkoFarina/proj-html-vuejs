@@ -1,11 +1,8 @@
 <script>
-import dataHeader from '../data/navHeaderData';
     export default {
         name: 'NavbarHeader',
-        data(){
-            return {
-                dataHeader
-            }
+        props: {
+            dataHeader: Array
         }
     }
 </script>

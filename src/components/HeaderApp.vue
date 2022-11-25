@@ -1,4 +1,5 @@
 <script>
+import {navHeaderData} from '../data/allDataSection';
 import NavbarHeader from "./NavbarHeader.vue";
 import InteractionHeader from "./InteractionHeader.vue";
 export default {
@@ -6,7 +7,11 @@ export default {
   components: {
     NavbarHeader,
     InteractionHeader,
-  },
+  }, data(){
+            return {
+                navHeaderData
+            }
+        }
 };
 </script>
 
@@ -18,7 +23,7 @@ export default {
       </div>
 
       <div class="right d-flex">
-        <NavbarHeader />
+        <NavbarHeader :dataHeader="navHeaderData"/>
         <InteractionHeader />
       </div>
     </div>

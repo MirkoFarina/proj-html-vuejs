@@ -1,17 +1,15 @@
 <script>
-import dataCardDream from '../data/dataCardDream';
+import {dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents} from '../data/allDataSection';
+
 import JumbotronApp from './JumbotronApp.vue';
 import TemplateBuildDream from './TemplateBuildDream.vue';
-import accordion from '../data/dataAccordion';
 import TemplateCareerPerspective from './TemplateCareerPerspective.vue';
-import dataStatics from '../data/dataStatics';
 import StaticsApp from './StaticsApp.vue';
-import dataCardCourses from '../data/dataCardCourses';
 import TemplateCourses from './TemplateCourses.vue';
 import QuestionLeft from './QuestionLeft.vue';
 import QuestionRight from './QuestionRight.vue';
 import TemplateEvent from './TemplateEvent.vue';
-import dataEvents from '../data/dataEvents';
+
   export default {
     name: 'MainApp',
     components: {
@@ -27,7 +25,7 @@ import dataEvents from '../data/dataEvents';
     data(){
         return {
             dataCardDream,
-            accordion,
+            dataAccordion,
             dataStatics,
             dataCardCourses,
             dataEvents
@@ -45,7 +43,7 @@ import dataEvents from '../data/dataEvents';
         </section>
 
         <section id="career-perspective">
-            <TemplateCareerPerspective :dataAccordion="accordion"/>
+            <TemplateCareerPerspective :dataAccordion="dataAccordion"/>
         </section>
 
         <section id="statistics">
