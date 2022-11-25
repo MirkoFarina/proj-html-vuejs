@@ -9,7 +9,9 @@ import StaticsApp from './StaticsApp.vue';
 import dataCardCourses from '../data/dataCardCourses';
 import TemplateCourses from './TemplateCourses.vue';
 import QuestionLeft from './QuestionLeft.vue';
-import QuestionRight from './QuestionRight.vue'
+import QuestionRight from './QuestionRight.vue';
+import TemplateEvent from './TemplateEvent.vue';
+import dataEvents from '../data/dataEvents';
   export default {
     name: 'MainApp',
     components: {
@@ -19,14 +21,16 @@ import QuestionRight from './QuestionRight.vue'
       StaticsApp,
       TemplateCourses,
       QuestionLeft,
-      QuestionRight
+      QuestionRight,
+      TemplateEvent
     },
     data(){
         return {
             dataCardDream,
             accordion,
             dataStatics,
-            dataCardCourses
+            dataCardCourses,
+            dataEvents
         }
     }
   }
@@ -57,7 +61,9 @@ import QuestionRight from './QuestionRight.vue'
             <QuestionRight />
         </section>
 
-        
+        <section id="events">
+            <TemplateEvent :dataCard="dataEvents" />
+        </section>
     </main>
 </template>
 
