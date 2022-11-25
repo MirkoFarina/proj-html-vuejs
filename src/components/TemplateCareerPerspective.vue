@@ -40,6 +40,7 @@ export default {
             top: 50px;
             left: -50px;
             background-image: url('../assets/img/underlay-shape-lilla.svg');
+            background-size: 60% 70%;
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
