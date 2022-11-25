@@ -9,6 +9,7 @@ import StaticsApp from './StaticsApp.vue';
 import dataCardCourses from '../data/dataCardCourses';
 import TemplateCourses from './TemplateCourses.vue';
 import QuestionLeft from './QuestionLeft.vue';
+import QuestionRight from './QuestionRight.vue'
   export default {
     name: 'MainApp',
     components: {
@@ -17,7 +18,8 @@ import QuestionLeft from './QuestionLeft.vue';
       TemplateCareerPerspective,
       StaticsApp,
       TemplateCourses,
-      QuestionLeft
+      QuestionLeft,
+      QuestionRight
     },
     data(){
         return {
@@ -51,7 +53,8 @@ import QuestionLeft from './QuestionLeft.vue';
         </section>
 
         <section id="questions">
-            <QuestionLeft />
+            <QuestionLeft/>
+            <QuestionRight />
         </section>
     </main>
 </template>

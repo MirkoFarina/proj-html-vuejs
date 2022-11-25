@@ -56,6 +56,10 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/partials/variables' as *;
 
+    .row {
+        margin-bottom: 100px;
+    }
+
     ul {
         list-style-type: '\2714';
         font-weight: 700;
