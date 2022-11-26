@@ -33,6 +33,11 @@ import 'swiper/css/bundle';
 </template>
 
 
-<style lang="scss" scoped>
-
+<style lang="scss" >
+@use '../scss/partials/variables' as *;
+.swiper-pagination-bullet-active {
+    background-color: $primary-color;
+    width: 10px;
+    height: 10px;
+}
 </style>
