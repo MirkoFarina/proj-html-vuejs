@@ -191,4 +191,31 @@ const dataEvents = [
     }
 ];
 
-export {navHeaderData,dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents}
+const dataCardsCoach = [
+    {
+        name: 'mina hollace',
+        work: 'freelancer',
+        description: 'I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal for people like me.',
+        img: 'testimonial-avata-02.jpg'
+    },
+    {
+        name: 'madley pondor',
+        work: 'IT specialist',
+        description: 'MaxCOach is my best choice. Their tutors are smart and professional when dealing with students.',
+        img: 'testimonial-avata-04.jpg'
+    },
+    {
+        name: 'luvic dubble',
+        work: 'private tutor',
+        description: 'I am happy whith their arrangement of lessons and subjects. They reflect a scientific investigation.',
+        img: 'testimonial-avata-01.jpg'
+    },
+    {
+        name: 'pinco pallo',
+        work: 'Web Developer',
+        description: 'I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal for people like me.',
+        img: 'testimonial-avata-03.jpg'
+    }
+]
+
+export {navHeaderData,dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents, dataCardsCoach}

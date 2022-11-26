@@ -21,7 +21,7 @@ export default {
     </h2>
 </div>
 <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2">
+    <div class="row row-cols-1 row-cols-lg-2 mb-5">
         <CardEvents :cards="dataCard"/>
     </div>
 </div>

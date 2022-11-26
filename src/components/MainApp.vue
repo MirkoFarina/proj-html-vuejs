@@ -1,5 +1,5 @@
 <script>
-import {dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents} from '../data/allDataSection';
+import {dataCardDream, dataAccordion, dataStatics, dataCardCourses,dataEvents, dataCardsCoach} from '../data/allDataSection';
 //JUMBO
 import JumbotronApp from './JumbotronApp.vue';
 // BUILD DREAM 
@@ -15,6 +15,8 @@ import QuestionLeft from './QuestionLeft.vue';
 import QuestionRight from './QuestionRight.vue';
 //EVENTS
 import TemplateEvent from './TemplateEvent.vue';
+// COACH
+import TemplateCoach from './TemplateCoach.vue';
 
   export default {
     name: 'MainApp',
@@ -26,7 +28,8 @@ import TemplateEvent from './TemplateEvent.vue';
       TemplateCourses,
       QuestionLeft,
       QuestionRight,
-      TemplateEvent
+      TemplateEvent,
+      TemplateCoach
     },
     data(){
         return {
@@ -34,7 +37,8 @@ import TemplateEvent from './TemplateEvent.vue';
             dataAccordion,
             dataStatics,
             dataCardCourses,
-            dataEvents
+            dataEvents,
+            dataCardsCoach
         }
     }
   }
@@ -68,6 +72,10 @@ import TemplateEvent from './TemplateEvent.vue';
         <section id="events">
             <TemplateEvent :dataCard="dataEvents" />
         </section>
+
+        <section id="coach">
+            <TemplateCoach :dataCards="dataCardsCoach"/>
+        </section>
     </main>
 </template>
 
@@ -76,5 +84,9 @@ import TemplateEvent from './TemplateEvent.vue';
 @use '../scss/partials/variables' as *;
 section {
   margin-bottom: 100px;
+}
+
+#coach {
+    background-color: #F8F8F8;
 }
 </style>
