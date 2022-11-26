@@ -34,6 +34,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../scss/partials/variables' as *;
 .mf-card {
     background-color: white;
     box-shadow: 1px 8px 16px 3px rgba(0,0,0,0.1);
@@ -52,12 +53,15 @@ export default {
         transform: translateY(-30%);
         p {
            overflow: auto;
+           color: $primary-color;
         }
         h5 {
             text-transform: uppercase;
         }
         span {
             text-transform: capitalize;
+            color: $text-color;
+            font-size: .7rem;
         }
     }
 }
