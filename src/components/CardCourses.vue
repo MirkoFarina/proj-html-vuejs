@@ -66,6 +66,12 @@ span {
 .mf-card {
     margin-bottom: 30px;
     cursor: pointer;
+    &:hover {
+        box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.10);
+        .bottom {
+            background-color: white;
+        }
+    }
     .top {
         margin-bottom: 25px; 
         position: relative;

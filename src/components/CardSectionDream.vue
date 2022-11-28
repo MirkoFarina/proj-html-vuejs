@@ -45,6 +45,9 @@ export default {
             color: lighten($primary-color, 30%);
             font-weight: 700;
             font-size: .8rem;
+            &:hover {
+                color: #20ad96;
+            }
             span {
                 display: inline-block;
                 padding-left: 20px;

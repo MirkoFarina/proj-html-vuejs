@@ -94,7 +94,7 @@ export default {
       </div>
     </div>
     <!-- /WAVE -->
-    
+
     <section id="questions">
       <QuestionLeft />
       <QuestionRight />
@@ -118,12 +118,13 @@ section {
 }
 
 #courses {
-  background-color: #f6f6f6;
+  background-image: linear-gradient(180deg, white, #f6f6f6);
   margin-bottom: 0;
   padding-bottom: 80px;
 }
 
 #coach {
-  background-color: $background-color;
+  background-color: #f6f6f6;
+  position: relative;
 }
 </style>

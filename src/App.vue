@@ -47,5 +47,9 @@
         font-size: 1rem;
         font-weight: 700;
         color: white;
+        &:hover {
+            background-color: $primary-color-over;
+            color: white;
+        }
     }
 </style>

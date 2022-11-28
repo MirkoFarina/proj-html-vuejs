@@ -45,6 +45,9 @@ export default {
             color: $secondary-color;
             padding-bottom: 5px;
             border-bottom: 1px solid lightgray;
+            &:hover {
+                color: $primary-color-over;
+            }
         }
     }
 }

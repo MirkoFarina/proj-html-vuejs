@@ -52,6 +52,10 @@ export default {
     background-color: lighten($background-color, 5%);
     border-radius: 5px;
     padding: 20px;
+    &:hover {
+        box-shadow: inset 7px 0px 0px -3px $secondary-color;
+        background-color: white;
+    }
     .left {
         width: 70%;
         .location {
