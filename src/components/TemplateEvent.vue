@@ -30,6 +30,7 @@ export default {
         Excited about our event? <a href="#"> View all events  <i class="fa-solid fa-arrow-right-long"></i></a>
     </span>
 </div>
+
 </template>
 
 
@@ -51,4 +52,5 @@ export default {
         }
     }
 }
+
 </style>
