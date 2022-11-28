@@ -54,6 +54,7 @@ export default {
         padding-bottom: 80px;
         .content-start {
             width: 70%;
+            background-color: #f6f6f6;
             align-items: center;
             justify-content: center;
             flex-direction: column;

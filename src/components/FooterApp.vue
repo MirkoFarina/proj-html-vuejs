@@ -24,11 +24,11 @@ import ListFooterSocial from './ListFooterSocial.vue';
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div  class=" col-12 col-lg-6">
                 <ListFooter :listItem="dataFooterAddress"/>
                 <ListFooterSocial :listItem="dataSocial" />
             </div>
-            <div class="col-4 d-flex justify-content-between">
+            <div class="col-lg-4 col-12 d-flex justify-content-between">
                 <div class="left d-flex">
                     <div class="first-col">
                         <ListFooter :listItem="dataFooterExploreL"/>
