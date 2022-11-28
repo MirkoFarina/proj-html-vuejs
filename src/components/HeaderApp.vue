@@ -2,14 +2,17 @@
 import {navHeaderData} from '../data/allDataSection';
 import NavbarHeader from "./NavbarHeader.vue";
 import InteractionHeader from "./InteractionHeader.vue";
+import HamburgerHeader  from "./HamburgerHeader.vue";
 export default {
   name: "HeaderApp",
   components: {
     NavbarHeader,
     InteractionHeader,
+    HamburgerHeader
   }, data(){
             return {
-                navHeaderData
+                navHeaderData,
+                isOpen: false
             }
         }
 };
@@ -23,8 +26,9 @@ export default {
       </div>
 
       <div class="right d-flex">
-        <NavbarHeader :dataHeader="navHeaderData"/>
-        <InteractionHeader />
+        <NavbarHeader class="d-none d-lg-flex" :dataHeader="navHeaderData"/>
+        <InteractionHeader class="d-none d-lg-flex"/>
+        <HamburgerHeader  class="d-lg-none d-flex" />
       </div>
     </div>
   </header>
