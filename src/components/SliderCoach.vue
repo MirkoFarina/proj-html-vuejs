@@ -26,7 +26,7 @@ import 'swiper/css/bundle';
     :slides-per-view="3"
     :space-between="50"
     :pagination="{ clickable: true }">
-       <SwiperSlide  v-for="(card, index) in arrayCards" :key="index" class="mb-5">
+       <SwiperSlide v-for="(card, index) in arrayCards" :key="index" class="mb-5">
            <CardCoach :card="card"/>
        </SwiperSlide>
     </swiper>

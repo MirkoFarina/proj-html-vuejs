@@ -25,7 +25,8 @@ export default {
 
         <div class="start-now">
             <div class="img-abs-right"></div>
-            <h6>
+            <div class="content-start d-flex">
+                <h6>
                 Start today for getting <span>Online Certification</span>
             </h6>
             <h4 class="mb-5">
@@ -35,6 +36,7 @@ export default {
                 <button type="button" class="btn mf-button btn-lg">
                     Get started now
                 </button>
+            </div>
             </div>
         </div>
     </div>
@@ -48,9 +50,16 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         position: relative;
         padding-bottom: 80px;
+        .content-start {
+            width: 70%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index:  5;
+        }
         .img-abs-right {
             position: absolute;
             top: 20px;
@@ -67,13 +76,13 @@ export default {
         &::after {
             content: '';
             position: absolute;
-            top: -80px;
-            right: -20px;
+            top: 0px;
+            right: 30px;
             background-image: url('../assets/img/maxcoach-shape-02.png');
             background-repeat: no-repeat;
             background-position: center;
-            width:300px;
-            height: 400px;
+            width: 150px;
+            height: 150px;
             z-index: 0;
         }
         &::before {
@@ -82,7 +91,7 @@ export default {
             top: 90px;
             left: 50px;
             width: 150px;
-            height: 100px;
+            height: 40px;
             background-image: url('../assets/img/maxcoach-shape-01.png');
             background-repeat: no-repeat;
         }
