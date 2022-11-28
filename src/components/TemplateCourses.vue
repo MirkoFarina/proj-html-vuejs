@@ -25,7 +25,7 @@ export default {
             <CardCourses v-for="(card, index) in dataCourses" :key="index" :content="card" />
         </div>
         <div class="row">
-            <div class="col-4 offset-4">
+            <div class="col-12 d-flex justify-content-center">
                 <button type="button" class="btn mf-button  btn-lg">
                     View all courses 
                     <i class="fa-solid fa-arrow-right-long"></i>
