@@ -19,7 +19,7 @@ export default {
                     <i :class="{'d-none' : !accordionItem.isShow}" class="fa-solid fa-circle-minus"></i>
                 </span>
             </div>
-            <div class="body-accordion " :class="{'no-show' : !accordionItem.isShow}">
+            <div class="body-accordion " :class="{'no-show' : accordionItem.isShow}">
                 <p>
                     {{accordionItem.body}}
                 </p>
@@ -33,13 +33,13 @@ export default {
 <style lang="scss" scoped>
 @use '../scss/partials/variables' as *;
 
-.no-show {
-    display: none;
-}
+
 .open {
     background-color: $secondary-color;
     color: white;
 }
+
+
 
 h2 {
     font-size: 1.3rem;
@@ -51,6 +51,7 @@ h2 {
         margin-bottom: 40px;
         border-radius: 5px;
         color: lighten($black-color, 10%);
+        position: relative;
         .header-accordion {
             position: relative;
             padding: 15px 40px 15px 15px;
@@ -68,9 +69,19 @@ h2 {
                 }
             }
         }
-        .body-accordion {
-            padding: 20px;
-        }
+        .no-show {
+                max-height: 200px;
+                overflow: auto;
+            }
     }
+    
 }
+.body-accordion {
+            max-height: 0;
+            transition: max-height .7s;
+            overflow: hidden;
+            p {
+                padding: 20px;
+            }
+        }
 </style>
