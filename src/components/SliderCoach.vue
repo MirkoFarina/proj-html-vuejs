@@ -10,6 +10,27 @@ import 'swiper/css/bundle';
             SwiperSlide,
             CardCoach
         },
+        data () {
+      return { 
+        // RESPONSIVE SWIPER ADD BREAK POINTS
+        swiperOptions: {
+          breakpoints: {
+      320: {
+         slidesPerView: 1,
+         spaceBetween: 10
+      },
+      700: {
+         slidesPerView: 2,
+         spaceBetween: 50
+      },
+      992: {
+         slidesPerView: 3,
+         spaceBetween: 50
+      } 
+   }   
+        }
+      }
+    },
         props: {
             arrayCards: Array
         },
@@ -22,9 +43,8 @@ import 'swiper/css/bundle';
 </script>
 <template>
     <swiper
+    :breakpoints="swiperOptions.breakpoints"
     :modules="modules"
-    :slides-per-view="3"
-    :space-between="50"
     :pagination="{ clickable: true }">
        <SwiperSlide v-for="(card, index) in arrayCards" :key="index" class="mb-5">
            <CardCoach :card="card"/>
@@ -40,4 +60,6 @@ import 'swiper/css/bundle';
     width: 10px;
     height: 10px;
 }
+
+
 </style>
